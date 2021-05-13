@@ -14,5 +14,5 @@ organized steps:
    a. !mona modules
    b. !mona find -s "\xff\xe4" -m [dll library name]
 
-6.5 Generates the shell, prints it out. If you like it, copy into the MyDefinitions.py file
+6-5 Generates the shell, prints it out. If you like it, copy into the MyDefinitions.py file
 7. Start the listener, send the payload and catch the shell.
