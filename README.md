@@ -13,6 +13,5 @@ organized steps:
 6. Before running step 6, use the Immunity debugger to find the "FFE4 jmp esp":
    a. !mona modules
    b. !mona find -s "\xff\xe4" -m [dll library name]
-
 7. Generates the shell, prints it out. If you like it, copy into the MyDefinitions.py file
 8. Start the listener, send the payload and catch the shell.
