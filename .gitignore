@@ -1,0 +1,6 @@
+.gitignore
+badcharacters.py
+
+__pycache__/
+.idea
+venv

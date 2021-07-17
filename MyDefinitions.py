@@ -3,8 +3,10 @@ import subprocess
 
 class MyDefinitions:
 
-    def __init__(self, RHOST, RPORT, eip_offset=0, eip_post=0, bad_chars=[], eip_overwrite="", LHOST="192.168.1.1",
+    def __init__(self, RHOST, RPORT, eip_offset=0, eip_post=0, bad_chars=None, eip_overwrite="", LHOST="192.168.1.1",
                  LPORT=443):
+        if bad_chars is None:
+            bad_chars = []
         self.RHOST = RHOST
         self.RPORT = RPORT
         self.eip_offset = ("A" * eip_offset).encode()

